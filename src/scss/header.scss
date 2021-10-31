@@ -1,0 +1,43 @@
+.header {
+  width: 100%;
+  padding: 36px 0;
+  &-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+.header-logo {
+  & a {
+    font-weight: 900px;
+    font-size: 1.625rem;
+    text-transform: uppercase;
+    color: #656980;
+  }
+  & a::after {
+    content: 'box';
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $white;
+  }
+}
+.header-menu {
+  &__list {
+    display: flex;
+  }
+  &__item {
+    margin-right: 3rem;
+    transition: 0.2s;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__item a {
+    font-size: 0.8125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
+    position: relative;
+  }
+}
